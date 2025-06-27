@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Vivek's Developer Portfolio
 
-## Getting Started
+Welcome to my **personal portfolio website** — a modern, responsive site that showcases my projects, skills, and contact information. Built using **Next.js 15**, **Tailwind CSS**, and **Framer Motion**, this site is designed with performance and aesthetics in mind.
 
-First, run the development server:
+---
+
+## 🚀 Live Demo
+
+👉 [View Portfolio](https://giri-landing-page-krk4.vercel.app)
+
+---
+
+## ✨ Features
+
+- ⚡ **Built with Next.js 15 (App Router)**
+- 🎨 Styled with **Tailwind CSS**
+- 🎥 Smooth animations via **Framer Motion**
+- 🧩 Modular & reusable components
+- 🌈 Gradient headings and custom UI effects
+- 📱 Fully responsive across all screen sizes
+- 📬 Contact form integrated with **Formspree**
+- 🖼 3D Avatar canvas and background particle effects
+
+---
+
+## 🧱 Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS, Shadcn UI
+- **Animation**: Framer Motion
+- **Type Checking**: TypeScript
+- **Deployment**: Vercel
+- **Form Handling**: Formspree
+
+---
+
+## 📁 Project Structure
+
+/app → Pages & layout using Next.js App Router
+/components → Reusable UI components (Hero, Projects, Contact, etc.)
+/public/images → Project and avatar images
+/styles → Global CSS and Tailwind configuration
+
+less
+Copy
+Edit
+
+---
+
+## 📸 Featured Projects
+
+- [Forever E-Commerce 🛒](https://forever-frontend-puce-eight.vercel.app)
+- [CodeJudge Backend 💻](https://github.com/saivivek45/CodeJudge)
+- [Expense Tracker 💰](https://expense-tracker-gamma-navy.vercel.app/)
+- [Nike Frontend Clone 👟](https://github.com/saivivek45/Nike-website)
+- [Giri AI Landing Page 🤖](https://giri-landing-page-krk4.vercel.app)
+
+---
+
+## 🧑‍💼 About Me
+
+I'm **Sai Vivek**, a passionate full-stack web developer and Python programmer from India. I love building clean, performant, and visually engaging applications. This portfolio reflects my skills, growth, and dedication to tech.
+
+---
+
+## 📫 Contact Me
+
+- 📧 Email: [saivivekvandrangi@gmail.com](mailto:saivivekvandrangi@gmail.com)  
+- 🐙 GitHub: [@saivivek45](https://github.com/saivivek45)  
+- 🔗 LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourusername)
+
+---
+
+## 🛠 Running Locally
 
 ```bash
+git clone https://github.com/saivivek45/your-portfolio-repo.git
+cd your-portfolio-repo
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Then visit http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📜 License
+This project is for educational and portfolio use. You’re welcome to fork and customize it!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+diff
+Copy
+Edit
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Let me know if you want:
+- A preview image/banner at the top  
+- Shields for GitHub stars, license, etc.  
+- Section for blog/experience (when added)  
 
-## Learn More
+Just say the word and I’ll enhance it!
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
