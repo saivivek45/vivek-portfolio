@@ -5,7 +5,23 @@ import { motion } from "framer-motion";
 
 const TAG_COLORS = ["blue", "purple", "emerald", "amber", "red", "indigo"];
 
-export const ProjectCard = ({ project, size }: any) => {
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  tags: string[];
+  imgSrc: string;
+  imgAlt: string;
+  githubLink: string;
+  demoLink: string;
+}
+
+interface ProjectCardProps {
+  project: Project;
+  size?: "small" | "large";
+}
+
+export const ProjectCard = ({ project, size = "small" }: ProjectCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -26,7 +42,7 @@ export const ProjectCard = ({ project, size }: any) => {
       <div className="absolute inset-0 bg-black/70 backdrop-blur-md p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div>
           <div className="flex flex-wrap gap-2 mb-3">
-            {project.tags.map((tag, i) => (
+            {project.tags.map((tag: string, i: number) => (
               <span
                 key={i}
                 className={`text-xs font-semibold px-3 py-1 rounded-full bg-${
@@ -40,10 +56,10 @@ export const ProjectCard = ({ project, size }: any) => {
           <h2 className="text-2xl font-semibold mb-1">{project.title}</h2>
           <p className="text-sm text-slate-300 mb-4">{project.description}</p>
           <div className="flex gap-5 text-sm">
-            <a href={project.githubLink} className="hover:text-gray-300 transition-all">
+            <a href={project.githubLink} className="hover:text-gray-300 transition-all" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github mr-1"></i> GitHub
             </a>
-            <a href={project.demoLink} className="hover:text-gray-300 transition-all">
+            <a href={project.demoLink} className="hover:text-gray-300 transition-all" target="_blank" rel="noopener noreferrer">
               <i className="fas fa-external-link-alt mr-1"></i> Live Demo
             </a>
           </div>
