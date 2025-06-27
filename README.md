@@ -6,7 +6,7 @@ Welcome to my **personal portfolio website** — a modern, responsive site that 
 
 ## 🚀 Live Demo
 
-👉 [View Portfolio](https://giri-landing-page-krk4.vercel.app)
+👉 [View Portfolio](https://vivek-portfolio-pink-phi.vercel.app/)
 
 ---
 
