@@ -23,7 +23,7 @@ export const Hero = () => {
     { href: "#projects", label: "Projects", icon: Briefcase },
     { href: "#contact", label: "Contact", icon: Mail },
     {
-      href: "/saivivek_webdeveloper_resume.pdf",
+      href: "/svivek_webdeveloper_cv.pdf",
       label: "Resume",
       icon: FileText,
       external: true
@@ -143,7 +143,6 @@ export const Hero = () => {
               href={card.href}
               target={card.external ? "_blank" : "_self"}
               rel={card.external ? "noopener noreferrer" : undefined}
-              download={card.external ? true : undefined}
               onClick={handleClick}
               className={`${
                 card.wide ? "col-span-2" : ""
