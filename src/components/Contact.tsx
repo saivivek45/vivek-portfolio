@@ -18,7 +18,7 @@ export const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const response = await fetch("https://formspree.io/f/mvgrdzel", {
+    const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
