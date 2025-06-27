@@ -16,26 +16,34 @@ export const Contact = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+  const endpoint = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
 
-    if (response.ok) {
-      setPopup(true);
-      setFormData({ name: "", email: "", message: "" });
+  if (!endpoint) {
+    console.error("Formspree endpoint is missing in environment variables.");
+    return;
+  }
 
-      setTimeout(() => {
-        setPopup(false);
-      }, 3000); // hide after 3 seconds
-    }
-  };
+  const response = await fetch(endpoint, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(formData),
+  });
+
+  if (response.ok) {
+    setPopup(true);
+    setFormData({ name: "", email: "", message: "" });
+
+    setTimeout(() => {
+      setPopup(false);
+    }, 3000);
+  }
+};
+
 
   return (
     <section
