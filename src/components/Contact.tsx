@@ -42,7 +42,7 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "saivivek.dev@gmail.com",
+    value: "saivivek2006@gmail.com",
     href: "mailto:saivivek.dev@gmail.com"
   },
   {
